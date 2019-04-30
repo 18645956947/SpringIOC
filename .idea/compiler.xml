@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="action_scope" />
+        <module name="customize_scope" />
         <module name="web_scope" />
       </profile>
     </annotationProcessing>
