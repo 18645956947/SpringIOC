@@ -10,6 +10,7 @@
         <module name="bean_property_extend" />
         <module name="customize_scope" />
         <module name="spring_bean_lazy_init" />
+        <module name="use_annotation" />
         <module name="web_scope" />
       </profile>
     </annotationProcessing>
