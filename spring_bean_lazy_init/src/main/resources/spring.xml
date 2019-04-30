@@ -6,5 +6,6 @@
 
     <!-- 该bean 可能很就都不会被使用，则可以设置其为懒加载模式  该bean 为 singleton 单例模式-->
     <bean class="Bean" id="bean" lazy-init="true"/>
+    <bean class="Bean1" id="bean1" destroy-method="onDestory" init-method="onInit"/>
 
 </beans>

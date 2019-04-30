@@ -13,6 +13,7 @@
         <module>web_scope</module>
         <module>customize_scope</module>
         <module>spring_bean_lazy_init</module>
+        <module>bean_property_extend</module>
     </modules>
     <dependencies>
         <dependency>
