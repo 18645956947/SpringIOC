@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+        <bean class="com.class06.AnotherBean" id="anotherBean"/>
+        <bean class="com.class06.Bean" id="bean">
+                <!-- 通过构造方法注入bean-->
+                <constructor-arg index="0" name="anotherBean" type="com.class06.AnotherBean"
+                                 ref="anotherBean"/>
+                <constructor-arg index="1" name="string" type="java.lang.String"
+                                 value="aaaaa"/>
+
+                <property name="anotherBean1">
+                        <bean class="com.class06.AnotherBean"/>
+                </property>
+                <property name="string1" value="bbbbb"/>
+
+                <property name="stringList">
+                        <list>
+                                <value>aaaaa</value>
+                                <value>bbbbb</value>
+                        </list>
+                </property>
+                <property name="anotherBeanList">
+                        <list>
+                                <ref bean="anotherBean"/>
+                                <ref bean="anotherBean"/>
+                        </list>
+                </property>
+                <property name="stringSet">
+                        <set>
+                                <value>aaaaa</value>
+                                <value>bbbbb</value>
+                        </set>
+                </property>
+                <property name="anotherBeanSet">
+                        <set>
+                                <ref bean="anotherBean"/>
+                                <ref bean="anotherBean"/>
+                        </set>
+                </property>
+                <property name="stringMap">
+                        <map>
+                                <entry key="ccccc" value="ddddd"/>
+                                <entry key="eeeee" value="fffff"/>
+                        </map>
+                </property>
+                <property name="anotherBeanMap">
+                        <map>
+                                <entry key-ref="anotherBean" value-ref="anotherBean"/>
+                        </map>
+                </property>
+                <property name="properties">
+                        <props>
+                                <prop key="aaaaa">bbbbb</prop>
+                        </props>
+                </property>
+                <property name="anotherBean2">
+                        <null/>
+                </property>
+
+        </bean>
+        <!--<bean class="com.class06.Bean" id="bean"-->
+                <!--c:anotherBean-ref="anotherBean" c:string="ccccc"-->
+                <!--p:anotherBean1-ref="anotherBean" p:string="ddddd"-->
+        <!--/>-->
+
+
+
+</beans>
