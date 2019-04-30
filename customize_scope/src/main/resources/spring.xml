@@ -13,6 +13,6 @@
                 <entry key="simpleThreadScope" value-ref="simpleThreadScope"/>
             </map>
         </property>
-    </bean>
+</bean>
     <bean class="Bean" id="bean" scope="simpleThreadScope"/>
 </beans>

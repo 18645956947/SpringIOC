@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="action_scope" />
         <module name="customize_scope" />
+        <module name="spring_bean_lazy_init" />
         <module name="web_scope" />
       </profile>
     </annotationProcessing>
