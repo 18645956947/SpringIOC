@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="action_scope" />
+        <module name="bean_property_extend" />
         <module name="customize_scope" />
         <module name="spring_bean_lazy_init" />
         <module name="web_scope" />
